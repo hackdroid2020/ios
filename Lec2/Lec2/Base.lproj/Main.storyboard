@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Lec2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.25" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Daily-horoscope-for-December-17-YOUR-star-sign-reading-astrology" translatesAutoresizingMaskIntoConstraints="NO" id="q4q-Bj-ApN">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ask The Oracle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fcw-Y6-yuX">
+                                <rect key="frame" x="103.5" y="60" width="207.5" height="38.5"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="35"/>
+                                <color key="textColor" red="0.0035313111889542226" green="0.5750307976908029" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Your Question..." textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aOq-HL-0mu">
+                                <rect key="frame" x="32" y="130.5" width="350" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="changed:" destination="BYZ-38-t0r" eventType="editingChanged" id="VIw-4e-6WM"/>
+                                </connections>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c5g-x8-dIL">
+                                <rect key="frame" x="32" y="196.5" width="350" height="40"/>
+                                <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="24"/>
+                                <state key="normal" title="Ask">
+                                    <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="askButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vmc-hU-FdK"/>
+                                </connections>
+                            </button>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Answer..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UcT-9N-ehV">
+                                <rect key="frame" x="122" y="268.5" width="170.5" height="67.5"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="42"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="UcT-9N-ehV" firstAttribute="top" secondItem="c5g-x8-dIL" secondAttribute="bottom" constant="32" id="1pr-IE-yKM"/>
+                            <constraint firstItem="q4q-Bj-ApN" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="5fA-sg-FGD"/>
+                            <constraint firstItem="c5g-x8-dIL" firstAttribute="top" secondItem="aOq-HL-0mu" secondAttribute="bottom" constant="32" id="7fc-tH-ZQ6"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="aOq-HL-0mu" secondAttribute="trailing" constant="32" id="BJ0-M0-Y9U"/>
+                            <constraint firstAttribute="trailing" secondItem="q4q-Bj-ApN" secondAttribute="trailing" id="EE7-ac-I5Y"/>
+                            <constraint firstItem="UcT-9N-ehV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="HzJ-zb-1pM"/>
+                            <constraint firstAttribute="bottom" secondItem="q4q-Bj-ApN" secondAttribute="bottom" id="Vjf-dm-idk"/>
+                            <constraint firstItem="aOq-HL-0mu" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="32" id="h1m-JB-WCz"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="c5g-x8-dIL" secondAttribute="trailing" constant="32" id="iU3-qH-IMQ"/>
+                            <constraint firstItem="c5g-x8-dIL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="32" id="iVc-MP-Fft"/>
+                            <constraint firstItem="q4q-Bj-ApN" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="igL-ul-rdS"/>
+                            <constraint firstItem="fcw-Y6-yuX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="l7Q-m2-7HX"/>
+                            <constraint firstItem="aOq-HL-0mu" firstAttribute="top" secondItem="fcw-Y6-yuX" secondAttribute="bottom" constant="32" id="wxU-tp-v7B"/>
+                            <constraint firstItem="fcw-Y6-yuX" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="xmY-fu-AgN"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="answerLabel" destination="UcT-9N-ehV" id="2Kn-T2-Q3a"/>
+                        <outlet property="askButton" destination="c5g-x8-dIL" id="Vvk-DT-auY"/>
+                        <outlet property="questionTextField" destination="aOq-HL-0mu" id="vjq-4h-C5U"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-184.05797101449278" y="-38.839285714285715"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Daily-horoscope-for-December-17-YOUR-star-sign-reading-astrology" width="750" height="445"/>
+    </resources>
+</document>
