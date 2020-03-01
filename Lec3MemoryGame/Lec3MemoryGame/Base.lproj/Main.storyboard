@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Lec3MemoryGame" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="GBq-b7-ea8">
+                                <rect key="frame" x="8" y="52" width="398" height="802.5"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="aMy-DB-VYy">
+                                        <rect key="frame" x="0.0" y="0.0" width="398" height="265.5"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tH0-CU-xFK">
+                                                <rect key="frame" x="0.0" y="0.0" width="197.5" height="265.5"/>
+                                                <state key="normal" image="card-back"/>
+                                                <state key="highlighted" image="bambi.jpg"/>
+                                                <connections>
+                                                    <action selector="cardTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DdA-jw-2iw"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="dIy-PM-eJT">
+                                                <rect key="frame" x="200.5" y="0.0" width="197.5" height="265.5"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" image="card-back"/>
+                                                <state key="highlighted" image="bear.jpg"/>
+                                                <connections>
+                                                    <action selector="cardTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bjT-vb-1JK"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="q2s-1f-2rH">
+                                        <rect key="frame" x="0.0" y="268.5" width="398" height="265.5"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="74s-6e-vFn">
+                                                <rect key="frame" x="0.0" y="0.0" width="197.5" height="265.5"/>
+                                                <state key="normal" image="card-back"/>
+                                                <state key="highlighted" image="Elephant_128x128.png"/>
+                                                <connections>
+                                                    <action selector="cardTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kcB-p0-JnL"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="oDC-1S-n2s">
+                                                <rect key="frame" x="200.5" y="0.0" width="197.5" height="265.5"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" image="card-back"/>
+                                                <connections>
+                                                    <action selector="cardTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5Bd-sp-kKG"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="cRy-C0-Su9">
+                                        <rect key="frame" x="0.0" y="537" width="398" height="265.5"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="OSE-Op-K4z">
+                                                <rect key="frame" x="0.0" y="0.0" width="197.5" height="265.5"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" image="card-back"/>
+                                                <connections>
+                                                    <action selector="cardTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TtN-1X-9TM"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="6rV-3c-ice">
+                                                <rect key="frame" x="200.5" y="0.0" width="197.5" height="265.5"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" image="card-back"/>
+                                                <connections>
+                                                    <action selector="cardTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="F81-di-aNz"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="GBq-b7-ea8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="3da-IZ-dtk"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="GBq-b7-ea8" secondAttribute="bottom" constant="8" id="sFQ-11-K5w"/>
+                            <constraint firstItem="GBq-b7-ea8" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="8" id="zh2-9S-jFg"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="GBq-b7-ea8" secondAttribute="trailing" constant="8" id="zmt-nK-vze"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outletCollection property="memoryCards" destination="tH0-CU-xFK" collectionClass="NSMutableArray" id="zrQ-gY-OuR"/>
+                        <outletCollection property="memoryCards" destination="dIy-PM-eJT" collectionClass="NSMutableArray" id="vgk-1m-c8f"/>
+                        <outletCollection property="memoryCards" destination="74s-6e-vFn" collectionClass="NSMutableArray" id="Rjf-gM-0cf"/>
+                        <outletCollection property="memoryCards" destination="oDC-1S-n2s" collectionClass="NSMutableArray" id="Oow-gE-nPZ"/>
+                        <outletCollection property="memoryCards" destination="OSE-Op-K4z" collectionClass="NSMutableArray" id="Lq5-Ob-MKz"/>
+                        <outletCollection property="memoryCards" destination="6rV-3c-ice" collectionClass="NSMutableArray" id="sKM-9z-IIf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="71.651785714285708"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Elephant_128x128.png" width="128" height="128"/>
+        <image name="bambi.jpg" width="650" height="650"/>
+        <image name="bear.jpg" width="600" height="600"/>
+        <image name="card-back" width="256" height="256"/>
+    </resources>
+</document>

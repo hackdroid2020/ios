@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="eGV-la-MFl">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Lec3LoveCalculator" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="heart" translatesAutoresizingMaskIntoConstraints="NO" id="W6n-yp-Y2U">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="First Name..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WHv-5m-utU">
+                                <rect key="frame" x="16" y="60" width="382" height="60"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="32"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Second Name..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="x18-TS-hw8">
+                                <rect key="frame" x="16" y="136" width="382" height="60"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="32"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2ct-Ya-U1X">
+                                <rect key="frame" x="16" y="212" width="382" height="87"/>
+                                <fontDescription key="fontDescription" name="Zapfino" family="Zapfino" pointSize="22"/>
+                                <state key="normal" title="Caclulate"/>
+                                <connections>
+                                    <action selector="calculate:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YU8-e3-Zd6"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Result:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TfY-IP-oaz">
+                                <rect key="frame" x="16" y="804.5" width="382" height="57.5"/>
+                                <fontDescription key="fontDescription" name="Zapfino" family="Zapfino" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="W6n-yp-Y2U" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="0xg-ml-mQq"/>
+                            <constraint firstItem="x18-TS-hw8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="4Bi-KI-TG4"/>
+                            <constraint firstItem="WHv-5m-utU" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="AvF-15-N8I"/>
+                            <constraint firstItem="2ct-Ya-U1X" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="B79-Ki-amd"/>
+                            <constraint firstItem="TfY-IP-oaz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="B7D-dE-9dM"/>
+                            <constraint firstItem="TfY-IP-oaz" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" constant="0.16" id="O4j-aS-Bx6"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="WHv-5m-utU" secondAttribute="trailing" constant="16" id="QdV-4b-tT3"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="TfY-IP-oaz" secondAttribute="trailing" constant="16" id="QiX-oh-Apq"/>
+                            <constraint firstAttribute="trailing" secondItem="W6n-yp-Y2U" secondAttribute="trailing" id="aes-Kd-Eam"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="x18-TS-hw8" secondAttribute="trailing" constant="16" id="cVm-iO-upG"/>
+                            <constraint firstAttribute="bottom" secondItem="W6n-yp-Y2U" secondAttribute="bottom" id="duz-1W-xkI"/>
+                            <constraint firstItem="2ct-Ya-U1X" firstAttribute="top" secondItem="x18-TS-hw8" secondAttribute="bottom" constant="16" id="hFv-PN-kSH"/>
+                            <constraint firstItem="WHv-5m-utU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="pYX-rW-j2M"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="2ct-Ya-U1X" secondAttribute="trailing" constant="16" id="rL3-bc-GJB"/>
+                            <constraint firstItem="x18-TS-hw8" firstAttribute="top" secondItem="WHv-5m-utU" secondAttribute="bottom" constant="16" id="usP-TG-jS4"/>
+                            <constraint firstItem="W6n-yp-Y2U" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="wam-20-sOX"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="firstNameText" destination="WHv-5m-utU" id="bPR-Cp-UPF"/>
+                        <outlet property="resultLabel" destination="TfY-IP-oaz" id="ppC-zA-lEq"/>
+                        <outlet property="secondNameText" destination="x18-TS-hw8" id="LdT-vH-gBr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-343" y="94"/>
+        </scene>
+        <!--Home Work View Controller-->
+        <scene sceneID="amj-46-e5j">
+            <objects>
+                <viewController id="eGV-la-MFl" customClass="HomeWorkViewController" customModule="Lec3LoveCalculator" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="r6U-hB-Tvl">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="39" translatesAutoresizingMaskIntoConstraints="NO" id="MFT-YI-3St">
+                                <rect key="frame" x="16" y="60" width="382" height="34"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DK5-Fs-wbw">
+                                        <rect key="frame" x="0.0" y="0.0" width="171.5" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SAr-4U-Tr1">
+                                        <rect key="frame" x="210.5" y="0.0" width="171.5" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Iv-1P-C7q">
+                                <rect key="frame" x="16" y="110" width="382" height="30"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="heart" translatesAutoresizingMaskIntoConstraints="NO" id="qTo-sk-WQD">
+                                <rect key="frame" x="97" y="373" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vi4-Lw-1Xj">
+                                <rect key="frame" x="16" y="156" width="382" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Vi4-Lw-1Xj" firstAttribute="leading" secondItem="v1i-Xz-oqI" secondAttribute="leading" constant="16" id="3IE-dt-lqF"/>
+                            <constraint firstItem="MFT-YI-3St" firstAttribute="top" secondItem="v1i-Xz-oqI" secondAttribute="top" constant="16" id="5bI-iQ-dk8"/>
+                            <constraint firstItem="7Iv-1P-C7q" firstAttribute="top" secondItem="MFT-YI-3St" secondAttribute="bottom" constant="16" id="Kuo-e8-Pvl"/>
+                            <constraint firstItem="7Iv-1P-C7q" firstAttribute="leading" secondItem="v1i-Xz-oqI" secondAttribute="leading" constant="16" id="O0o-M3-Zn8"/>
+                            <constraint firstItem="MFT-YI-3St" firstAttribute="leading" secondItem="v1i-Xz-oqI" secondAttribute="leading" constant="16" id="TV3-xF-kMJ"/>
+                            <constraint firstItem="Vi4-Lw-1Xj" firstAttribute="top" secondItem="7Iv-1P-C7q" secondAttribute="bottom" constant="16" id="WZq-qF-4Tz"/>
+                            <constraint firstItem="v1i-Xz-oqI" firstAttribute="trailing" secondItem="Vi4-Lw-1Xj" secondAttribute="trailing" constant="16" id="YjT-SY-4l5"/>
+                            <constraint firstItem="v1i-Xz-oqI" firstAttribute="trailing" secondItem="7Iv-1P-C7q" secondAttribute="trailing" constant="16" id="Zi8-Al-kfv"/>
+                            <constraint firstItem="v1i-Xz-oqI" firstAttribute="trailing" secondItem="MFT-YI-3St" secondAttribute="trailing" constant="16" id="aRK-RQ-U8K"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="v1i-Xz-oqI"/>
+                    </view>
+                    <connections>
+                        <outlet property="stack" destination="MFT-YI-3St" id="8mb-4p-fkP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RZK-Q2-t0B" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="707" y="95"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="heart" width="1920" height="1757"/>
+    </resources>
+</document>
