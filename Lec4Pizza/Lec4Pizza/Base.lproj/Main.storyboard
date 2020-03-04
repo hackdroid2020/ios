@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Pizza Size View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="PizzaSizeViewController" customModule="Lec4Pizza" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="V3h-gp-Ofx">
+                                <rect key="frame" x="16" y="60" width="382" height="360"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B7x-dF-0Li">
+                                        <rect key="frame" x="0.0" y="0.0" width="382" height="96"/>
+                                        <state key="normal" image="icons8-pizza"/>
+                                        <connections>
+                                            <segue destination="yaD-G1-wMW" kind="show" identifier="small" id="8vx-vY-26T"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wmr-YS-yBP">
+                                        <rect key="frame" x="0.0" y="128" width="382" height="100"/>
+                                        <state key="normal" image="icons8-pizza-1"/>
+                                        <connections>
+                                            <segue destination="yaD-G1-wMW" kind="show" identifier="medium" id="w8g-eC-JdF"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vv0-T3-Z6z">
+                                        <rect key="frame" x="0.0" y="260" width="382" height="100"/>
+                                        <state key="normal" image="icons8-pizza-2"/>
+                                        <connections>
+                                            <segue destination="yaD-G1-wMW" kind="show" identifier="big" id="eQd-ba-NKG"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="V3h-gp-Ofx" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="9VW-CS-oON"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="V3h-gp-Ofx" secondAttribute="trailing" constant="16" id="Lq6-38-IX8"/>
+                            <constraint firstItem="V3h-gp-Ofx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="gJy-SY-CxN"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="133" y="96"/>
+        </scene>
+        <!--Toppings View Controller-->
+        <scene sceneID="lAc-Op-GKm">
+            <objects>
+                <viewController id="yaD-G1-wMW" customClass="ToppingsViewController" customModule="Lec4Pizza" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="nA8-sO-UcG">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="EqL-QJ-qvz">
+                                <rect key="frame" x="16" y="16" width="382" height="440"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jSM-ib-cqm">
+                                        <rect key="frame" x="0.0" y="0.0" width="382" height="96"/>
+                                        <state key="normal" image="onions"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FSA-8a-3gq">
+                                        <rect key="frame" x="0.0" y="128" width="382" height="96"/>
+                                        <state key="normal" image="olives"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tfM-Mg-PIE">
+                                        <rect key="frame" x="0.0" y="256" width="382" height="100"/>
+                                        <state key="normal" image="tomatoes"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wez-Kq-lty">
+                                        <rect key="frame" x="0.0" y="388" width="382" height="52"/>
+                                        <color key="backgroundColor" red="0.0035313111890000002" green="0.57503079769999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="33"/>
+                                        <state key="normal" title="Next">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="avL-fP-XAl" kind="show" id="xSn-wm-REs"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="EqL-QJ-qvz" firstAttribute="top" secondItem="aUP-U4-A2R" secondAttribute="top" constant="16" id="UDh-kx-8E7"/>
+                            <constraint firstItem="aUP-U4-A2R" firstAttribute="trailing" secondItem="EqL-QJ-qvz" secondAttribute="trailing" constant="16" id="lb2-UT-Vyb"/>
+                            <constraint firstItem="EqL-QJ-qvz" firstAttribute="leading" secondItem="aUP-U4-A2R" secondAttribute="leading" constant="16" id="y5u-qX-ElJ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="aUP-U4-A2R"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="bUC-hW-Jle"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SRc-WT-y4t" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="906" y="96"/>
+        </scene>
+        <!--Summary View Controller-->
+        <scene sceneID="vQ3-0y-aDS">
+            <objects>
+                <viewController id="avL-fP-XAl" customClass="SummaryViewController" customModule="Lec4Pizza" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6pl-1M-sRX">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icons8-pizza-2" translatesAutoresizingMaskIntoConstraints="NO" id="ebc-vE-HzI">
+                                <rect key="frame" x="16" y="16" width="382" height="100"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" distribution="fillEqually" spacing="11" translatesAutoresizingMaskIntoConstraints="NO" id="2Yh-MD-xxW">
+                                <rect key="frame" x="16" y="132" width="382" height="96"/>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="סיכום הזמנה" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rCR-aG-nrn">
+                                <rect key="frame" x="16" y="244" width="382" height="41"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="34"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="lYo-Ec-jdW" firstAttribute="trailing" secondItem="2Yh-MD-xxW" secondAttribute="trailing" constant="16" id="11C-y5-mib"/>
+                            <constraint firstItem="2Yh-MD-xxW" firstAttribute="top" secondItem="ebc-vE-HzI" secondAttribute="bottom" constant="16" id="9Dm-zW-u1W"/>
+                            <constraint firstItem="rCR-aG-nrn" firstAttribute="top" secondItem="2Yh-MD-xxW" secondAttribute="bottom" constant="16" id="CmE-UP-q6n"/>
+                            <constraint firstItem="ebc-vE-HzI" firstAttribute="leading" secondItem="lYo-Ec-jdW" secondAttribute="leading" constant="16" id="G2Y-1r-Drz"/>
+                            <constraint firstItem="lYo-Ec-jdW" firstAttribute="trailing" secondItem="rCR-aG-nrn" secondAttribute="trailing" constant="16" id="dLb-Md-73G"/>
+                            <constraint firstItem="2Yh-MD-xxW" firstAttribute="leading" secondItem="lYo-Ec-jdW" secondAttribute="leading" constant="16" id="gVJ-q9-1go"/>
+                            <constraint firstItem="lYo-Ec-jdW" firstAttribute="trailing" secondItem="ebc-vE-HzI" secondAttribute="trailing" constant="16" id="k8y-rY-fju"/>
+                            <constraint firstItem="rCR-aG-nrn" firstAttribute="leading" secondItem="lYo-Ec-jdW" secondAttribute="leading" constant="16" id="o7c-S7-6tV"/>
+                            <constraint firstItem="ebc-vE-HzI" firstAttribute="top" secondItem="lYo-Ec-jdW" secondAttribute="top" constant="16" id="zr8-xX-yIg"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="lYo-Ec-jdW"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="m7E-HJ-SDn"/>
+                    <connections>
+                        <outlet property="pizzaSizeImageView" destination="ebc-vE-HzI" id="w0i-h6-z2t"/>
+                        <outlet property="toppingsStack" destination="2Yh-MD-xxW" id="TYH-df-06a"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="s1W-Gh-pYH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1606" y="96"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="icons8-pizza" width="96" height="96"/>
+        <image name="icons8-pizza-1" width="100" height="100"/>
+        <image name="icons8-pizza-2" width="100" height="100"/>
+        <image name="olives" width="96" height="96"/>
+        <image name="onions" width="96" height="96"/>
+        <image name="tomatoes" width="100" height="100"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="eQd-ba-NKG"/>
+    </inferredMetricsTieBreakers>
+</document>
