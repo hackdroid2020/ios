@@ -19,6 +19,7 @@ struct Pizza {
 //    let p = Pizza(size: .large)
 //}
 
+//enum with rawValue (String)
 enum Topping:String {
     case onions = "onions", olives = "olives", tomatoes = "tomatoes"
 }

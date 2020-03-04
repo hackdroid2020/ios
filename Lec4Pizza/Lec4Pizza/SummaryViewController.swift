@@ -17,7 +17,23 @@ class SummaryViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        //label.text = "big"
+        //summary label:
+//        if let p = pizza{
+//            switch p.size {
+//            case .large:
+//                label.text = "Big"
+//            case .medium:
+//                label.text = "Medium"
+//            case .small:
+//                label.text = "Small"
+//            default:
+//                <#code#>
+//            }
+//
+//            for t in p.toppings{
+//                label.text = label.text! + " " t.rawValue
+//            }
+//        }
         
         if let pizza = pizza{
             //if the pizza is not nil, declare a new const = pizza (not optional)
@@ -28,6 +44,20 @@ class SummaryViewController: UIViewController {
                 pizzaSizeImageView.image = #imageLiteral(resourceName: "icons8-pizza-1")
             case .small:
                 pizzaSizeImageView.image = #imageLiteral(resourceName: "icons8-pizza")
+            }
+            
+            for topping in pizza.toppings{
+                //for each topping -> new ImageView()
+                //add the new Imageview to our stack view
+                
+                //image ~ Bitmap from it's name in assets
+                let image = UIImage(named: topping.rawValue)
+                
+                //Image View (ios View)
+                let imageView = UIImageView(image: image)
+                
+                //add the image to the stackView:
+                toppingsStack.addArrangedSubview(imageView)
             }
         }
     }
