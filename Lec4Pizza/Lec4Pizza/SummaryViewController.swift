@@ -26,12 +26,10 @@ class SummaryViewController: UIViewController {
 //                label.text = "Medium"
 //            case .small:
 //                label.text = "Small"
-//            default:
-//                <#code#>
 //            }
 //
 //            for t in p.toppings{
-//                label.text = label.text! + " " t.rawValue
+//                label.text = label.text! + " " + t.rawValue
 //            }
 //        }
         

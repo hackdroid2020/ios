@@ -36,7 +36,7 @@
                                         <rect key="frame" x="0.0" y="260" width="382" height="100"/>
                                         <state key="normal" image="icons8-pizza-2"/>
                                         <connections>
-                                            <segue destination="yaD-G1-wMW" kind="show" identifier="big" id="eQd-ba-NKG"/>
+                                            <segue destination="yaD-G1-wMW" kind="show" identifier="large" id="eQd-ba-NKG"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -69,14 +69,23 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jSM-ib-cqm">
                                         <rect key="frame" x="0.0" y="0.0" width="382" height="96"/>
                                         <state key="normal" image="onions"/>
+                                        <connections>
+                                            <action selector="onionsTapped:" destination="yaD-G1-wMW" eventType="touchUpInside" id="V3n-Uc-KsZ"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FSA-8a-3gq">
                                         <rect key="frame" x="0.0" y="128" width="382" height="96"/>
                                         <state key="normal" image="olives"/>
+                                        <connections>
+                                            <action selector="olivesTapped:" destination="yaD-G1-wMW" eventType="touchUpInside" id="I17-js-sN2"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tfM-Mg-PIE">
                                         <rect key="frame" x="0.0" y="256" width="382" height="100"/>
                                         <state key="normal" image="tomatoes"/>
+                                        <connections>
+                                            <action selector="tomatoesTapped:" destination="yaD-G1-wMW" eventType="touchUpInside" id="MdM-2r-XId"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wez-Kq-lty">
                                         <rect key="frame" x="0.0" y="388" width="382" height="52"/>

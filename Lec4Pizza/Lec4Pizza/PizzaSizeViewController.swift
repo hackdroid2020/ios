@@ -12,10 +12,19 @@ class PizzaSizeViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
     }
-
-
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let dest = segue.destination as? ToppingsViewController{
+            
+            if segue.identifier == "small"{
+                dest.pizza = Pizza(size: .small)
+            }else if segue.identifier == "medium"{
+                dest.pizza = Pizza(size: .medium)
+            }else{
+                dest.pizza = Pizza(size: .large)
+            }
+        }
+    }
 }
 
