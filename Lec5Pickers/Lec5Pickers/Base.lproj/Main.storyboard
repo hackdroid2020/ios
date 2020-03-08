@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="KCQ-y2-a8P">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Lec5Pickers" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="14w-SE-JDG">
+                                <rect key="frame" x="16" y="60" width="414" height="216"/>
+                                <connections>
+                                    <action selector="datePicked:" destination="BYZ-38-t0r" eventType="valueChanged" id="hJQ-Co-ZdG"/>
+                                </connections>
+                            </datePicker>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="14w-SE-JDG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="fli-4F-MKt"/>
+                            <constraint firstItem="14w-SE-JDG" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" constant="16" id="viA-Bu-viF"/>
+                            <constraint firstItem="14w-SE-JDG" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="z5b-DQ-HOK"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="132" y="96"/>
+        </scene>
+        <!--Pickers View Controller-->
+        <scene sceneID="idj-Y9-L77">
+            <objects>
+                <viewController id="KCQ-y2-a8P" customClass="PickersViewController" customModule="Lec5Pickers" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="o3G-hO-5sf">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a0k-Jt-Fzn">
+                                <rect key="frame" x="16" y="60" width="382" height="216"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="KCQ-y2-a8P" id="4JV-qc-OCG"/>
+                                    <outlet property="delegate" destination="KCQ-y2-a8P" id="G6j-z2-vjw"/>
+                                </connections>
+                            </pickerView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="a0k-Jt-Fzn" firstAttribute="trailing" secondItem="66e-Pp-ooR" secondAttribute="trailing" constant="-16" id="EFS-nb-fw5"/>
+                            <constraint firstItem="a0k-Jt-Fzn" firstAttribute="top" secondItem="66e-Pp-ooR" secondAttribute="top" constant="16" id="eWm-BN-8Od"/>
+                            <constraint firstItem="a0k-Jt-Fzn" firstAttribute="leading" secondItem="66e-Pp-ooR" secondAttribute="leading" constant="16" id="nv3-AN-HW6"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="66e-Pp-ooR"/>
+                    </view>
+                    <connections>
+                        <outlet property="foodPicker" destination="a0k-Jt-Fzn" id="yA2-nf-pNQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BHp-oI-GFs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="946" y="96"/>
+        </scene>
+    </scenes>
+</document>
